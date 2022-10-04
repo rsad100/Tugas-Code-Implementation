@@ -1,0 +1,15 @@
+{
+  "name": "code-implementation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Task 1.js",
+  "scripts": {
+    "Task_1": "node Task_1.js",
+    "Task_2": "node Task_2.js",
+    "Task_3": "node Task_3.js",
+    "Task_4": "node Task_4.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
