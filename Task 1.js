@@ -1,4 +1,7 @@
 function cekPalindrom(text) {
+  //Validasi
+  if (typeof text != "string") return "Input harus string";
+
   const arrayReverse = [...text]; //masukan text kedalam array //mengapa menggunakan const?
   let textReverse = "";
 
@@ -16,10 +19,10 @@ function cekPalindrom(text) {
 
   if (text == textReverse) {
     //cek apakah text palindrome atau bukan
-    return console.log(text + " adalah palindrome");
+    return text + " adalah palindrome";
   } else {
-    return console.log(text + " bukan palindrome");
+    return text + " bukan palindrome";
   }
 }
 
-cekPalindrom("malam");
+console.log(cekPalindrom("malam"));

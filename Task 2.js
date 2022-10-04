@@ -1,4 +1,7 @@
 function changeText(input) {
+  //Validasi
+  if (typeof input != "string") return "Input harus string";
+
   const array = [...input];
   const newArray = [];
   let final = "";

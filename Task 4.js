@@ -1,4 +1,7 @@
 function divideAndSort(number) {
+  //Validasi
+  if (typeof number != "number") return console.log("Input harus number!");
+
   //function divide number
   let array = String(number).split(0); //split number kedalam string dengan menggunakan separator "0"
   const newArray = [];

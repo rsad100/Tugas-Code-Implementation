@@ -1,9 +1,15 @@
 function FazzFood(harga, voucher, jarak, pajak) {
-  // Cek Voucher
+  //Validasi
+  if ( typeof(harga) != "number" ) return console.log("Input harga harus number")
+  if ( typeof(voucher) != "string" ) return console.log("Input voucher harus string")
+  if ( typeof(jarak) != "number" ) return console.log("Input jarak harus number")
+  if ( typeof(pajak) != "boolean" ) return console.log("Input pajak harus boolean")
+  
   let potong = 0;
   let antar = 0;
   let tax = 0;
 
+  // Cek Voucher
   if (voucher == "FAZZFOOD50") {
     if (harga >= 50000) {
       potong = harga * 0.5;
@@ -42,4 +48,4 @@ function FazzFood(harga, voucher, jarak, pajak) {
   console.log("SubTotal : ", harga - potong + antar + tax);
 }
 
-FazzFood(75000, "TEST", 5, true);
+FazzFood(75000, "FAZZFOOD50", 5, true);
