@@ -30,9 +30,9 @@ function divideAndSort(number) {
     final = final + result[i];
   }
 
-  final = parseInt(final, 10);
+  return final = parseInt(final, 10);
 
-  console.log(final);
+  //console.log(final);
 }
 
-divideAndSort(5956560159466056);
+console.log(divideAndSort(5956560159466056));
